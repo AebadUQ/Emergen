@@ -1,0 +1,118 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+}
+:root {
+  --font-size-heading1: 48px;
+  --line-height-heading1: 62px;
+
+  --font-size-heading2: 48px;
+  --line-height-heading2: 62px;
+
+  --font-size-heading3:18px;
+  --line-height-heading3: 28px;
+
+
+  --font-size-body-font-variation1: 24px;
+  --line-height-body-font-variant1: 36px;
+  --font-size-body-font-variation3: 18px;
+  --line-height-body-font-variant3: 27px;
+
+  --font-size-nav-item: 18px;
+  --line-height-nav-item: 27px;
+
+  --color-white: #ffffff;
+  --color-bg: #373737;
+}
+.light {
+  --primary: #ff4001;
+  --secondary: #424242;
+  --tertianary:#424242;
+  --background: #f8fafc;
+
+  --text-primary: #252d3e;
+}
+.dark {
+  --primary: white;
+  --secondary: blue;
+  --background: #0f172a;
+
+  --text-primary: #f1f2f3;
+}
+.banner-heading {
+  font-size: var(--font-size-heading1);
+  line-height: var(--line-height-heading1);
+}
+.banner-content {
+  font-size: var(--font-size-body-font-variation1);
+  line-height: var(--line-height-body-font-variant1);
+}
+.btn-content {
+  font-size: var(--font-size-body-font-variation3);
+  line-height: var(--line-height-body-font-variant3);
+}
+.nav-item {
+  font-size: var(--font-size-nav-item);
+  line-height: var(--line-height-nav-item);
+}
+.section-heading {
+  font-size: var(--font-size-heading2);
+  line-height: var(--line-height-heading2);
+}
+.section-label{
+  font-size: var(--font-size-heading3);
+  line-height: var(--line-height-heading3);
+}
+.section-content{
+  
+  font-size: var(--font-size-heading3);
+  line-height: var(--line-height-heading3);
+}
+@media screen and (max-width: 767px) {
+  :root {
+    /* -6px */
+    --font-size-heading1: 42px;
+    --line-height-heading1: 56px;
+
+    --font-size-heading2:42px;
+    --line-height-heading2: 56px;
+
+    --font-size-body-font-variation1: 18px;
+    --line-height-body-font-variant1: 30px;
+
+    --font-size-body-font-variation3: 12px;
+    --line-height-body-font-variant3: 21px;
+
+    --font-size-heading3:16px;
+    --line-height-heading3:26px
+  }
+}
+
+@media screen and (max-width: 639px) {
+  :root {
+    /* -4px */
+    --font-size-heading1: 28px;
+    --line-height-heading1: 34px;
+
+    --font-size-heading2:28px;
+    --line-height-heading2: 32px;
+
+
+    --font-size-body-font-variation1: 18px;
+    --line-height-body-font-variant1: 30px;
+
+    --font-size-body-font-variation3: 12px;
+    --line-height-body-font-variant3: 21px;
+  }
+}
